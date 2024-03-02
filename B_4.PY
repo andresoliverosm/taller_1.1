@@ -5,7 +5,7 @@ print ('3. Esferico')
 vi = int(input())
 
 if vi==1:
-    print(f'el robot cilindrico tiene dos articulaciones prismaticas')
+    print(f'el robot cilindrico tiene tres articulaciones prismaticas')
 elif vi==2:
     print(f'el robot cartesiano tiene tres articulaciones de rotacion')
 elif vi==3:

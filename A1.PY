@@ -1,0 +1,33 @@
+#  A. 1 Realice un programa que sume, reste, multiplique (producto punto y producto cruz) y
+#  divida dos vectores previamente inicializados.
+
+import numpy as np
+vector_1=[67,45,33]
+vector_2=[32,98,17]
+vector_suma=[]
+vector_resta=[]
+vector_punto=[]
+vector_division=[]
+
+
+#suma de vectores'
+for i in range(0,2):
+    vector_suma.append(vector_1[i]+vector_2[i])
+
+#resta de vectores
+for i in range(0,2):
+    vector_resta.append(vector_1[i]-vector_2[i])
+
+#producto punto
+for i in range(0,2):
+    vector_punto.append(vector_1[i]*vector_2[i])
+
+#division de vectores
+for i in range(0,2):
+    vector_division.append(vector_1[i]/vector_2[i])
+
+print('vector suma: ',vector_suma)
+print('vector resta: ',vector_resta)
+print('producto punto: ',sum(vector_punto))
+print('producto cruz: ', np.cross(vector_1,vector_2))
+print('vector division',vector_division)
